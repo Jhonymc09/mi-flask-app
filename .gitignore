@@ -1,0 +1,10 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Entorno virtual
+venv/
+*.env
+
+# Otros archivos que no deseas subir
+.DS_Store
