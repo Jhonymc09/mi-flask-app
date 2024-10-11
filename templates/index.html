@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetología y Estética | Clara Belleza</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Para los íconos -->
 </head>
 <body>
     <header>
-        <h1>Bienvenida a Diofe Belleza</h1>
+        <h1>Bienvenida a Clara Belleza</h1>
         <nav>
             <ul>
                 <li><a href="#servicios">Servicios</a></li>
@@ -20,15 +21,57 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
     <main>
-        <!-- (Resto del contenido igual) -->
+        <section id="servicios">
+            <h2>Servicios Ofrecidos</h2>
+            <div class="servicio">
+                <h3>Faciales Personalizados</h3>
+                <p>Tratamientos específicos para cada tipo de piel, utilizando productos orgánicos y naturales.</p>
+            </div>
+            <div class="servicio">
+                <h3>Maquillaje Profesional</h3>
+                <p>Realizo maquillaje para eventos, sesiones fotográficas y ocasiones especiales.</p>
+            </div>
+            <div class="servicio">
+                <h3>Depilación Eficaz</h3>
+                <p>Ofrecemos depilación con cera, garantizando resultados duraderos y piel suave.</p>
+            </div>
+            <div class="servicio">
+                <h3>Masajes Relajantes</h3>
+                <p>Masajes terapéuticos que ayudan a liberar el estrés y mejorar tu bienestar.</p>
+            </div>
+            <div class="servicio">
+                <h3>Tratamientos Antienvejecimiento</h3>
+                <p>Uso de técnicas y productos avanzados para mantener tu piel joven y radiante.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de mí</h2>
+            <p>Hola, soy Clara, cosmetóloga esteticista con más de 10 años de experiencia. Mi pasión es ayudarte a resaltar tu belleza natural. Mi enfoque está en la personalización de tratamientos para cada cliente, asegurando que obtengas resultados visibles y duraderos.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¡Agenda tu cita ahora!</p>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensaje"></p>
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp"> </i> <!-- Ícono de WhatsApp -->
+            </a>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Clara Belleza. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
